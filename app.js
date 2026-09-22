@@ -77,7 +77,7 @@ function setHeroDog(index, initial=false){
       name.textContent=dog.name.toUpperCase();
       meta.textContent=dog.meta;
       card.classList.remove('is-changing');
-    },400);
+    },300);
 
   }else{
     img.src=dog.img;
@@ -95,7 +95,7 @@ function startHeroCarousel(){
   heroTimer=window.setInterval(()=>{
     heroIndex=(heroIndex+1)%heroDogs.length;
     setHeroDog(heroIndex);
-  },800);
+  },1200);
 }
 
 startHeroCarousel();
