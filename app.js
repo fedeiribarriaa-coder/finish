@@ -77,7 +77,7 @@ function setHeroDog(index, initial=false){
       name.textContent=dog.name.toUpperCase();
       meta.textContent=dog.meta;
       card.classList.remove('is-changing');
-    },300);
+    },400);
 
   }else{
     img.src=dog.img;
